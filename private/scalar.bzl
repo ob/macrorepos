@@ -5,8 +5,8 @@ load("@bazel_tools//tools/build_defs/repo:local.bzl", "local_repository")
 # Static list of known macrorepos (could be dynamic)
 # TODO: This shouldn't be here, but in a separate file
 REMOTES = {
-    "base": "",
-    "repo-a": "",
+    "base": "git@github.com:ob/base.git",
+    "repo-a": "git@github.com:ob/repo-a.git",
 }
 
 def scalar_repository(module_ctx, name, commit, destination):
