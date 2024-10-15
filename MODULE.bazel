@@ -1,0 +1,8 @@
+""" macrorepos module """
+
+module(
+    name = "macrorepos",
+    version = "0.0.1",
+)
+
+bazel_dep(name = "bazel_features", version = "1.18.0")
